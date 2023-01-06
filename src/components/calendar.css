@@ -1,0 +1,49 @@
+.list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.list-item {
+    position: relative;
+    width: 100%;
+}
+
+.list-item.active::before {
+    content: '';
+    position: absolute;
+    background: #3b8196;
+    width: 100%;
+    max-width: 38px;
+    height: 60px;
+    top: -35px;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 6px 5px 0px rgb(85 119 102 / 31%);
+}
+
+.list-item span {
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.list-item button {
+    margin-top: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
